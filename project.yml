@@ -1,0 +1,20 @@
+parameters: {}
+environment: {}
+packages:
+    - name: main
+      shared: false
+      environment:
+        REDIRECT_URL: https://google.com
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: redirect
+          binary: false
+          main: ""
+          runtime: nodejs:default
+          web: true
+          webSecure: false
+          parameters: {}
+          environment: {}
+          annotations: {}
+          limits: {}
