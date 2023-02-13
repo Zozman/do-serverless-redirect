@@ -3,8 +3,7 @@ environment: {}
 packages:
     - name: main
       shared: false
-      environment:
-        REDIRECT_URL: https://google.com
+      environment: {}
       parameters: {}
       annotations: {}
       functions:
