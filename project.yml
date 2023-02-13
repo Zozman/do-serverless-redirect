@@ -1,6 +1,6 @@
 parameters: {}
 environment:
-  REDIRECT_URL: https://google.com
+  REDIRECT_URL: ${REDIRECT_URL}
 packages:
     - name: main
       shared: false
