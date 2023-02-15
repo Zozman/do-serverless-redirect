@@ -5,7 +5,7 @@ spec:
   functions:
   - github:
       branch: master
-      repo_clone_url: https://github.com/Zozman/do-serverless-redirect
+      repo: Zozman/do-serverless-redirect
     name: do-serverless-redirect
     envs:
     - key: REDIRECT_URL
