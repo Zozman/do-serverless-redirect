@@ -8,7 +8,16 @@ spec:
       deploy_on_push: true
       repo: Zozman/do-serverless-redirect
     name: do-serverless-redirect
-    routes:
-    - path: /
+    envs:
+    - key: REDIRECT_URL
+      scope: RUN_TIME
+    ingress:
+      rules:
+      - component:
+          name: do-serverless-redirect-func
+          rewrite: /main/redirect
+        match:
+          path:
+            prefix: /
     source_dir: /
   name: do-serverless-redirect
